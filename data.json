@@ -330,9 +330,8 @@
       "name": "Clean hob",
       "estimatedMinutes": 10,
       "robot": null,
-      "completed": true,
-      "pinned": false,
-      "completedAt": "2026-07-20T10:29:41.906Z"
+      "completed": false,
+      "pinned": false
     },
     {
       "id": "t3-2026-07-20",
