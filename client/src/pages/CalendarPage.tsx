@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useAppData } from '../state/AppDataContext';
 import DayColumn from '../components/DayColumn';
 import { todayKey } from '../utils/date';
+import type { ScheduledTask } from '../types';
 
 export default function CalendarPage() {
   const { data, loading, error, toggleComplete, moveTask } = useAppData();
@@ -17,8 +18,8 @@ export default function CalendarPage() {
   );
 
   const byDate = useMemo(() => {
-    if (!data) return new Map<string, typeof data.scheduledTasks>();
-    const map = new Map<string, typeof data.scheduledTasks>();
+    const map = new Map<string, ScheduledTask[]>();
+    if (!data) return map;
     for (const task of data.scheduledTasks) {
       if (!map.has(task.date)) map.set(task.date, []);
       map.get(task.date)!.push(task);
