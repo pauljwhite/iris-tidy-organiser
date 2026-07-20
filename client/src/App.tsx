@@ -7,6 +7,7 @@ import CalendarPage from './pages/CalendarPage';
 import SettingsPage from './pages/SettingsPage';
 import SetupPage from './pages/SetupPage';
 import StatsPage from './pages/StatsPage';
+import RefreshButton from './components/RefreshButton';
 
 const navLinkClass = ({ isActive }: { isActive: boolean }) =>
   `px-3 py-2 rounded-md text-sm font-medium transition-colors ${
@@ -28,7 +29,10 @@ function App() {
         <div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100">
           <header className="border-b border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900">
             <div className="max-w-5xl mx-auto px-4 py-3 flex flex-wrap items-center justify-between gap-3">
-              <h1 className="text-lg font-semibold">🧹 Iris Tidy Organiser</h1>
+              <div className="flex items-center gap-1">
+                <h1 className="text-lg font-semibold">🧹 Iris Tidy Organiser</h1>
+                <RefreshButton />
+              </div>
               <nav className="flex flex-wrap gap-1">
                 <NavLink to="/" end className={navLinkClass}>
                   Calendar
