@@ -1,0 +1,680 @@
+{
+  "rooms": [
+    {
+      "id": "kitchen",
+      "name": "Kitchen"
+    },
+    {
+      "id": "dining-room",
+      "name": "Dining Room"
+    },
+    {
+      "id": "living-room",
+      "name": "Living Room"
+    },
+    {
+      "id": "stairs-hallway",
+      "name": "Stairs/Hallways"
+    },
+    {
+      "id": "downstairs-toilet",
+      "name": "Downstairs Toilet"
+    },
+    {
+      "id": "landing",
+      "name": "Landing"
+    },
+    {
+      "id": "office",
+      "name": "Office"
+    },
+    {
+      "id": "main-bathroom",
+      "name": "Main Bathroom"
+    },
+    {
+      "id": "master-bedroom",
+      "name": "Master Bedroom"
+    },
+    {
+      "id": "en-suite",
+      "name": "En Suite"
+    },
+    {
+      "id": "guest-bedroom",
+      "name": "Guest Bedroom"
+    }
+  ],
+  "taskTemplates": [
+    {
+      "id": "t1",
+      "roomId": "kitchen",
+      "name": "Wipe down surfaces",
+      "estimatedMinutes": 10,
+      "frequency": "weekly",
+      "robot": null
+    },
+    {
+      "id": "t2",
+      "roomId": "kitchen",
+      "name": "Clean hob",
+      "estimatedMinutes": 10,
+      "frequency": "weekly",
+      "robot": null
+    },
+    {
+      "id": "t3",
+      "roomId": "kitchen",
+      "name": "Mop floor",
+      "estimatedMinutes": 10,
+      "frequency": "weekly",
+      "robot": "qrevo-downstairs"
+    },
+    {
+      "id": "t4",
+      "roomId": "kitchen",
+      "name": "Empty bins",
+      "estimatedMinutes": 5,
+      "frequency": "weekly",
+      "robot": null
+    },
+    {
+      "id": "t5",
+      "roomId": "kitchen",
+      "name": "Clean inside microwave",
+      "estimatedMinutes": 10,
+      "frequency": "fortnightly",
+      "robot": null
+    },
+    {
+      "id": "t6",
+      "roomId": "kitchen",
+      "name": "Clean oven",
+      "estimatedMinutes": 20,
+      "frequency": "monthly",
+      "robot": null
+    },
+    {
+      "id": "t7",
+      "roomId": "dining-room",
+      "name": "Wipe table & chairs",
+      "estimatedMinutes": 5,
+      "frequency": "weekly",
+      "robot": null
+    },
+    {
+      "id": "t8",
+      "roomId": "dining-room",
+      "name": "Vacuum/mop floor",
+      "estimatedMinutes": 5,
+      "frequency": "weekly",
+      "robot": "qrevo-downstairs"
+    },
+    {
+      "id": "t9",
+      "roomId": "living-room",
+      "name": "Dust surfaces",
+      "estimatedMinutes": 10,
+      "frequency": "weekly",
+      "robot": null
+    },
+    {
+      "id": "t10",
+      "roomId": "living-room",
+      "name": "Vacuum",
+      "estimatedMinutes": 5,
+      "frequency": "weekly",
+      "robot": "qrevo-downstairs"
+    },
+    {
+      "id": "t11",
+      "roomId": "living-room",
+      "name": "Tidy & declutter",
+      "estimatedMinutes": 10,
+      "frequency": "weekly",
+      "robot": null
+    },
+    {
+      "id": "t12",
+      "roomId": "stairs-hallway",
+      "name": "Vacuum stairs",
+      "estimatedMinutes": 10,
+      "frequency": "weekly",
+      "robot": null
+    },
+    {
+      "id": "t13",
+      "roomId": "stairs-hallway",
+      "name": "Wipe bannister & skirting boards",
+      "estimatedMinutes": 10,
+      "frequency": "fortnightly",
+      "robot": null
+    },
+    {
+      "id": "t14",
+      "roomId": "downstairs-toilet",
+      "name": "Clean toilet & sink",
+      "estimatedMinutes": 10,
+      "frequency": "weekly",
+      "robot": null
+    },
+    {
+      "id": "t15",
+      "roomId": "downstairs-toilet",
+      "name": "Mop floor",
+      "estimatedMinutes": 5,
+      "frequency": "weekly",
+      "robot": "qrevo-downstairs"
+    },
+    {
+      "id": "t16",
+      "roomId": "landing",
+      "name": "Vacuum",
+      "estimatedMinutes": 5,
+      "frequency": "weekly",
+      "robot": "qrevo-upstairs"
+    },
+    {
+      "id": "t17",
+      "roomId": "landing",
+      "name": "Dust surfaces",
+      "estimatedMinutes": 5,
+      "frequency": "fortnightly",
+      "robot": null
+    },
+    {
+      "id": "t18",
+      "roomId": "office",
+      "name": "Declutter desk",
+      "estimatedMinutes": 10,
+      "frequency": "weekly",
+      "robot": null
+    },
+    {
+      "id": "t19",
+      "roomId": "office",
+      "name": "Vacuum/dust",
+      "estimatedMinutes": 10,
+      "frequency": "weekly",
+      "robot": "qrevo-upstairs"
+    },
+    {
+      "id": "t20",
+      "roomId": "office",
+      "name": "Wipe screens & equipment",
+      "estimatedMinutes": 5,
+      "frequency": "fortnightly",
+      "robot": null
+    },
+    {
+      "id": "t21",
+      "roomId": "main-bathroom",
+      "name": "Clean bath/shower",
+      "estimatedMinutes": 15,
+      "frequency": "weekly",
+      "robot": null
+    },
+    {
+      "id": "t22",
+      "roomId": "main-bathroom",
+      "name": "Clean toilet & sink",
+      "estimatedMinutes": 10,
+      "frequency": "weekly",
+      "robot": null
+    },
+    {
+      "id": "t23",
+      "roomId": "main-bathroom",
+      "name": "Mop floor",
+      "estimatedMinutes": 5,
+      "frequency": "weekly",
+      "robot": null
+    },
+    {
+      "id": "t24",
+      "roomId": "master-bedroom",
+      "name": "Change sheets",
+      "estimatedMinutes": 10,
+      "frequency": "weekly",
+      "robot": null
+    },
+    {
+      "id": "t25",
+      "roomId": "master-bedroom",
+      "name": "Tidy & declutter",
+      "estimatedMinutes": 10,
+      "frequency": "weekly",
+      "robot": null
+    },
+    {
+      "id": "t26",
+      "roomId": "master-bedroom",
+      "name": "Vacuum",
+      "estimatedMinutes": 5,
+      "frequency": "weekly",
+      "robot": "qrevo-upstairs"
+    },
+    {
+      "id": "t27",
+      "roomId": "master-bedroom",
+      "name": "Dust surfaces",
+      "estimatedMinutes": 5,
+      "frequency": "fortnightly",
+      "robot": null
+    },
+    {
+      "id": "t28",
+      "roomId": "en-suite",
+      "name": "Clean shower",
+      "estimatedMinutes": 10,
+      "frequency": "weekly",
+      "robot": null
+    },
+    {
+      "id": "t29",
+      "roomId": "en-suite",
+      "name": "Clean toilet & sink",
+      "estimatedMinutes": 10,
+      "frequency": "weekly",
+      "robot": null
+    },
+    {
+      "id": "t30",
+      "roomId": "guest-bedroom",
+      "name": "Tidy & dust",
+      "estimatedMinutes": 10,
+      "frequency": "fortnightly",
+      "robot": null
+    },
+    {
+      "id": "t31",
+      "roomId": "guest-bedroom",
+      "name": "Vacuum",
+      "estimatedMinutes": 5,
+      "frequency": "fortnightly",
+      "robot": "qrevo-upstairs"
+    },
+    {
+      "id": "t32",
+      "roomId": "guest-bedroom",
+      "name": "Change sheets",
+      "estimatedMinutes": 10,
+      "frequency": "monthly",
+      "robot": null
+    }
+  ],
+  "settings": {
+    "activeDaysPerWeek": 5,
+    "excludedWeekdays": [
+      0,
+      6
+    ]
+  },
+  "scheduledTasks": [
+    {
+      "id": "t1-2026-07-20",
+      "templateId": "t1",
+      "date": "2026-07-20",
+      "roomId": "kitchen",
+      "name": "Wipe down surfaces",
+      "estimatedMinutes": 10,
+      "robot": null,
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "id": "t2-2026-07-20",
+      "templateId": "t2",
+      "date": "2026-07-20",
+      "roomId": "kitchen",
+      "name": "Clean hob",
+      "estimatedMinutes": 10,
+      "robot": null,
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "id": "t3-2026-07-20",
+      "templateId": "t3",
+      "date": "2026-07-20",
+      "roomId": "kitchen",
+      "name": "Mop floor",
+      "estimatedMinutes": 2,
+      "robot": "qrevo-downstairs",
+      "completed": true,
+      "pinned": false,
+      "completedAt": "2026-07-20T08:55:39.565Z"
+    },
+    {
+      "id": "t4-2026-07-20",
+      "templateId": "t4",
+      "date": "2026-07-20",
+      "roomId": "kitchen",
+      "name": "Empty bins",
+      "estimatedMinutes": 5,
+      "robot": null,
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "id": "t5-2026-07-20",
+      "templateId": "t5",
+      "date": "2026-07-20",
+      "roomId": "kitchen",
+      "name": "Clean inside microwave",
+      "estimatedMinutes": 10,
+      "robot": null,
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "id": "t6-2026-07-20",
+      "templateId": "t6",
+      "date": "2026-07-20",
+      "roomId": "kitchen",
+      "name": "Clean oven",
+      "estimatedMinutes": 20,
+      "robot": null,
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "id": "t21-2026-07-20",
+      "templateId": "t21",
+      "date": "2026-07-21",
+      "roomId": "main-bathroom",
+      "name": "Clean bath/shower",
+      "estimatedMinutes": 15,
+      "robot": null,
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "id": "t22-2026-07-20",
+      "templateId": "t22",
+      "date": "2026-07-21",
+      "roomId": "main-bathroom",
+      "name": "Clean toilet & sink",
+      "estimatedMinutes": 10,
+      "robot": null,
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "id": "t23-2026-07-20",
+      "templateId": "t23",
+      "date": "2026-07-21",
+      "roomId": "main-bathroom",
+      "name": "Mop floor",
+      "estimatedMinutes": 5,
+      "robot": null,
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "id": "t24-2026-07-20",
+      "templateId": "t24",
+      "date": "2026-07-22",
+      "roomId": "master-bedroom",
+      "name": "Change sheets",
+      "estimatedMinutes": 10,
+      "robot": null,
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "id": "t25-2026-07-20",
+      "templateId": "t25",
+      "date": "2026-07-22",
+      "roomId": "master-bedroom",
+      "name": "Tidy & declutter",
+      "estimatedMinutes": 10,
+      "robot": null,
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "id": "t26-2026-07-20",
+      "templateId": "t26",
+      "date": "2026-07-22",
+      "roomId": "master-bedroom",
+      "name": "Vacuum",
+      "estimatedMinutes": 2,
+      "robot": "qrevo-upstairs",
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "id": "t27-2026-07-20",
+      "templateId": "t27",
+      "date": "2026-07-22",
+      "roomId": "master-bedroom",
+      "name": "Dust surfaces",
+      "estimatedMinutes": 5,
+      "robot": null,
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "id": "t9-2026-07-20",
+      "templateId": "t9",
+      "date": "2026-07-23",
+      "roomId": "living-room",
+      "name": "Dust surfaces",
+      "estimatedMinutes": 10,
+      "robot": null,
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "id": "t10-2026-07-20",
+      "templateId": "t10",
+      "date": "2026-07-23",
+      "roomId": "living-room",
+      "name": "Vacuum",
+      "estimatedMinutes": 2,
+      "robot": "qrevo-downstairs",
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "id": "t11-2026-07-20",
+      "templateId": "t11",
+      "date": "2026-07-23",
+      "roomId": "living-room",
+      "name": "Tidy & declutter",
+      "estimatedMinutes": 10,
+      "robot": null,
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "id": "t30-2026-07-20",
+      "templateId": "t30",
+      "date": "2026-07-24",
+      "roomId": "guest-bedroom",
+      "name": "Tidy & dust",
+      "estimatedMinutes": 10,
+      "robot": null,
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "id": "t31-2026-07-20",
+      "templateId": "t31",
+      "date": "2026-07-24",
+      "roomId": "guest-bedroom",
+      "name": "Vacuum",
+      "estimatedMinutes": 2,
+      "robot": "qrevo-upstairs",
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "id": "t32-2026-07-20",
+      "templateId": "t32",
+      "date": "2026-07-24",
+      "roomId": "guest-bedroom",
+      "name": "Change sheets",
+      "estimatedMinutes": 10,
+      "robot": null,
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "id": "t12-2026-07-20",
+      "templateId": "t12",
+      "date": "2026-07-23",
+      "roomId": "stairs-hallway",
+      "name": "Vacuum stairs",
+      "estimatedMinutes": 10,
+      "robot": null,
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "id": "t13-2026-07-20",
+      "templateId": "t13",
+      "date": "2026-07-23",
+      "roomId": "stairs-hallway",
+      "name": "Wipe bannister & skirting boards",
+      "estimatedMinutes": 10,
+      "robot": null,
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "id": "t28-2026-07-20",
+      "templateId": "t28",
+      "date": "2026-07-24",
+      "roomId": "en-suite",
+      "name": "Clean shower",
+      "estimatedMinutes": 10,
+      "robot": null,
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "id": "t29-2026-07-20",
+      "templateId": "t29",
+      "date": "2026-07-24",
+      "roomId": "en-suite",
+      "name": "Clean toilet & sink",
+      "estimatedMinutes": 10,
+      "robot": null,
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "id": "t18-2026-07-20",
+      "templateId": "t18",
+      "date": "2026-07-22",
+      "roomId": "office",
+      "name": "Declutter desk",
+      "estimatedMinutes": 10,
+      "robot": null,
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "id": "t19-2026-07-20",
+      "templateId": "t19",
+      "date": "2026-07-22",
+      "roomId": "office",
+      "name": "Vacuum/dust",
+      "estimatedMinutes": 2,
+      "robot": "qrevo-upstairs",
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "id": "t20-2026-07-20",
+      "templateId": "t20",
+      "date": "2026-07-22",
+      "roomId": "office",
+      "name": "Wipe screens & equipment",
+      "estimatedMinutes": 5,
+      "robot": null,
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "id": "t14-2026-07-20",
+      "templateId": "t14",
+      "date": "2026-07-21",
+      "roomId": "downstairs-toilet",
+      "name": "Clean toilet & sink",
+      "estimatedMinutes": 10,
+      "robot": null,
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "id": "t15-2026-07-20",
+      "templateId": "t15",
+      "date": "2026-07-21",
+      "roomId": "downstairs-toilet",
+      "name": "Mop floor",
+      "estimatedMinutes": 2,
+      "robot": "qrevo-downstairs",
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "id": "t7-2026-07-20",
+      "templateId": "t7",
+      "date": "2026-07-21",
+      "roomId": "dining-room",
+      "name": "Wipe table & chairs",
+      "estimatedMinutes": 5,
+      "robot": null,
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "id": "t8-2026-07-20",
+      "templateId": "t8",
+      "date": "2026-07-21",
+      "roomId": "dining-room",
+      "name": "Vacuum/mop floor",
+      "estimatedMinutes": 2,
+      "robot": "qrevo-downstairs",
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "id": "t16-2026-07-20",
+      "templateId": "t16",
+      "date": "2026-07-23",
+      "roomId": "landing",
+      "name": "Vacuum",
+      "estimatedMinutes": 2,
+      "robot": "qrevo-upstairs",
+      "completed": false,
+      "pinned": false
+    },
+    {
+      "id": "t17-2026-07-20",
+      "templateId": "t17",
+      "date": "2026-07-23",
+      "roomId": "landing",
+      "name": "Dust surfaces",
+      "estimatedMinutes": 5,
+      "robot": null,
+      "completed": false,
+      "pinned": false
+    }
+  ],
+  "rotationState": {
+    "t5": 2951,
+    "t6": 2951,
+    "t13": 2951,
+    "t17": 2951,
+    "t20": 2951,
+    "t27": 2951,
+    "t30": 2951,
+    "t31": 2951,
+    "t32": 2951
+  },
+  "weekStart": "2026-07-20"
+}

@@ -7,7 +7,7 @@ interface ConnectPageProps {
 
 export default function ConnectPage({ onConnected }: ConnectPageProps) {
   const [owner, setOwner] = useState('');
-  const [repo, setRepo] = useState('iris-tidy-organiser-data');
+  const [repo, setRepo] = useState('iris-tidy-organiser');
   const [path, setPath] = useState('data.json');
   const [token, setToken] = useState('');
   const [checking, setChecking] = useState(false);
@@ -38,7 +38,7 @@ export default function ConnectPage({ onConnected }: ConnectPageProps) {
         <div>
           <h1 className="text-lg font-semibold">🧹 Connect Iris Tidy Organiser</h1>
           <p className="text-sm text-slate-500 mt-1">
-            Your schedule is stored as a file in a private GitHub repo. Enter its details and a
+            Your schedule is stored as a file in this app's GitHub repo. Enter its details and a
             personal access token below - this stays in your browser only.
           </p>
         </div>
@@ -59,7 +59,7 @@ export default function ConnectPage({ onConnected }: ConnectPageProps) {
 
         <div>
           <label className="text-sm font-medium block mb-1" htmlFor="repo">
-            Data repo name
+            Repo name
           </label>
           <input
             id="repo"
