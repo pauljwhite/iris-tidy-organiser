@@ -43,6 +43,22 @@ export function AppDataProvider({ children }: { children: ReactNode }) {
     reload();
   }, [reload]);
 
+  // Phones/tablets keep the page's JS alive in the background instead of
+  // reloading it, so switching back to the app (or the browser tab) needs an
+  // explicit refetch to pick up changes made elsewhere - otherwise it just
+  // keeps showing whatever was last loaded into memory.
+  useEffect(() => {
+    function onFocusRegain() {
+      if (document.visibilityState === 'visible') reload();
+    }
+    document.addEventListener('visibilitychange', onFocusRegain);
+    window.addEventListener('focus', onFocusRegain);
+    return () => {
+      document.removeEventListener('visibilitychange', onFocusRegain);
+      window.removeEventListener('focus', onFocusRegain);
+    };
+  }, [reload]);
+
   const toggleComplete = useCallback(
     async (scheduledTaskId: string) => {
       if (!data) return;

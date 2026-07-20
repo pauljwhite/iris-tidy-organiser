@@ -63,7 +63,7 @@ function headers(cfg: GithubConfig): HeadersInit {
 let currentSha: string | null = null;
 
 export async function getFile(cfg: GithubConfig): Promise<AppData | null> {
-  const res = await fetch(apiUrl(cfg), { headers: headers(cfg) });
+  const res = await fetch(apiUrl(cfg), { headers: headers(cfg), cache: 'no-store' });
   if (res.status === 404) {
     currentSha = null;
     return null;
