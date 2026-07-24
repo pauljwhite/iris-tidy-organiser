@@ -441,8 +441,9 @@
       "name": "Vacuum",
       "estimatedMinutes": 2,
       "robot": "qrevo-upstairs",
-      "completed": false,
-      "pinned": false
+      "completed": true,
+      "pinned": false,
+      "completedAt": "2026-07-24T06:40:25.516Z"
     },
     {
       "id": "t27-2026-07-20",
@@ -617,8 +618,9 @@
       "name": "Mop floor",
       "estimatedMinutes": 2,
       "robot": "qrevo-downstairs",
-      "completed": false,
-      "pinned": false
+      "completed": true,
+      "pinned": false,
+      "completedAt": "2026-07-24T06:40:23.103Z"
     },
     {
       "id": "t7-2026-07-20",
