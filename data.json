@@ -639,8 +639,9 @@
       "name": "Vacuum/mop floor",
       "estimatedMinutes": 2,
       "robot": "qrevo-downstairs",
-      "completed": false,
-      "pinned": false
+      "completed": true,
+      "pinned": false,
+      "completedAt": "2026-07-24T06:40:22.470Z"
     },
     {
       "id": "t16-2026-07-20",
