@@ -487,8 +487,9 @@
       "name": "Tidy & declutter",
       "estimatedMinutes": 10,
       "robot": null,
-      "completed": false,
-      "pinned": false
+      "completed": true,
+      "pinned": false,
+      "completedAt": "2026-07-24T06:40:40.453Z"
     },
     {
       "id": "t30-2026-07-20",
@@ -655,8 +656,9 @@
       "name": "Vacuum",
       "estimatedMinutes": 2,
       "robot": "qrevo-upstairs",
-      "completed": false,
-      "pinned": false
+      "completed": true,
+      "pinned": false,
+      "completedAt": "2026-07-24T06:40:31.003Z"
     },
     {
       "id": "t17-2026-07-20",
