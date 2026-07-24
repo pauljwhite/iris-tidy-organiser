@@ -585,8 +585,9 @@
       "name": "Vacuum/dust",
       "estimatedMinutes": 2,
       "robot": "qrevo-upstairs",
-      "completed": false,
-      "pinned": false
+      "completed": true,
+      "pinned": false,
+      "completedAt": "2026-07-24T06:40:28.524Z"
     },
     {
       "id": "t20-2026-07-20",
