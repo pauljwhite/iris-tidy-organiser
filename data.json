@@ -475,8 +475,9 @@
       "name": "Vacuum",
       "estimatedMinutes": 2,
       "robot": "qrevo-downstairs",
-      "completed": false,
-      "pinned": false
+      "completed": true,
+      "pinned": false,
+      "completedAt": "2026-07-24T06:40:30.249Z"
     },
     {
       "id": "t11-2026-07-20",
